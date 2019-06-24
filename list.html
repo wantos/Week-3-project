@@ -9,30 +9,25 @@
 <body>
 	<h1>SIGN UP HERE</h1>
 	<fieldset>
-   <form id="formlist" action="javascript:saveData();">
+   <form id="formlist" action="javascript:contact();">
    	<label><strong>First Name</strong></label><br>
    	<input type="text" name="fname" id="fname" placeholder="enter your first name here"><br>
    	<label><strong>Last Name</strong></label><br>
    	<input type="text" name="lname" id="lname"  placeholder="enter your Last name here"><br>
    	<label><strong>Email</strong></label><br>
    	<input type="text" name="email" id="email"  placeholder="enter your email address"><br>
-   	<label><strong>Address</strong></label><br>
-   	<input type="text" name="address" id="address" placeholder="enter your home address"><br>
-   	<label><strong>Country</strong></label><br>
-   	<input type="text" name="country" id="country" placeholder="enter your country name"><br>
-    <label><strong>City</strong></label><br>
-    <input type="text" name="city" placeholder="enter your home city">
-    <input type="submit" name="Submit"><br>
-    <label><strong>Gender</strong></label><br>
+   		<label><strong>Gender</strong></label><br>
     <input type="radio" name="gender" value="male" checked> Male<br>
   <input type="radio" name="gender" value="female"> Female<br><br>
+      <input type="submit" value="Submit" onclick="contact()"><br>
+
     <button id="saveus">SAVE</button><br>
 </form>
-   <input type="text" placeholder="Search.."><br> 
-	<a href="search.html">SEARCH HERE!</a>
-
-   </fieldset>
-   
+ </fieldset>
+   <div class="searchme">
+   	<h2>Search Contact Here</h2><br>
+   	<input type="text" placeholder ="Search"><br>
+   </div>
    <script src="js/list.js"></script>
 </body>
 </html>
